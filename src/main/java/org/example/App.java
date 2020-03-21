@@ -11,7 +11,7 @@ public class App
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter number of numberOfCoffeeBagTypes");
+        System.out.println("Enter number of Coffee Bag Types");
         int numberOfCoffeeBagTypes = sc.nextInt();
         sc.nextLine();
         String[] order= new String[numberOfCoffeeBagTypes];
@@ -20,7 +20,7 @@ public class App
         }
         int[] volumes = processInput(numberOfCoffeeBagTypes, order);
         int n = volumes.length;
-        System.out.println("minimum number of boxes that are needed to fit the coffee bags : " +
+        System.out.println("Minimum number of boxes that are needed to fit the coffee bags : " +
                 calculateBox(volumes, n , volumeOfBox));
     }
 
